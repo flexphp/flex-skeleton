@@ -21,8 +21,9 @@ git clone git@github.com:flexphp/skeleton.git library
 
 - Rename skeleton to library
 - Rename Skeleton to Library
-- Unignore composer.lock file in `.gitignore` file
+- Unignore _composer.lock_ file in `.gitignore` file
 - Remove `.gitignore` files in _src_ and _test_ folders
+- Update `README.md` file
 
 ## License
 
