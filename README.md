@@ -3,7 +3,8 @@
 [![Latest Stable Version](https://poser.pugx.org/flexphp/skeleton/v/stable)](https://packagist.org/packages/flexphp/skeleton)
 [![Total Downloads](https://poser.pugx.org/flexphp/skeleton/downloads)](https://packagist.org/packages/flexphp/skeleton)
 [![Latest Unstable Version](https://poser.pugx.org/flexphp/skeleton/v/unstable)](https://packagist.org/packages/flexphp/skeleton)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/flexphp/skeleton/badges/quality-score.png)](https://scrutinizer-ci.com/g/flexphp/skeleton)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/flexphp/flex-skeleton/badges/quality-score.png)](https://scrutinizer-ci.com/g/flexphp/skeleton)
+[![Code Coverage](https://scrutinizer-ci.com/g/flexphp/flex-skeleton/badges/coverage.png)](https://scrutinizer-ci.com/g/flexphp/flex-skeleton)
 [![License](https://poser.pugx.org/flexphp/skeleton/license)](https://packagist.org/packages/flexphp/skeleton)
 [![composer.lock](https://poser.pugx.org/flexphp/skeleton/composerlock)](https://packagist.org/packages/flexphp/skeleton)
 
@@ -16,7 +17,7 @@ Change between frameworks when you need. Keep It Simple, SOLID and DRY with Flex
 Install the package with Composer:
 
 ```bash
-git clone git@github.com:flexphp/skeleton.git library
+git clone --depth=1 git@github.com:flexphp/skeleton.git library
 ```
 
 - Rename skeleton to library
