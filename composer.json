@@ -14,6 +14,7 @@
         "ext-json": "*"
     },
     "require-dev": {
+        "phpmd/phpmd": "^2.8",
         "phpstan/phpstan": "~0.9",
         "phpunit/phpunit": "^7.0",
         "squizlabs/php_codesniffer": "~3.2"
@@ -29,15 +30,17 @@
         }
     },
     "scripts": {
-    "phpcs": "phpcs --standard=PSR2 src/",
-    "phpfix": "phpcbf --standard=PSR2 --extensions=php src/",
-    "phpstan": "phpstan analyse -l 8 src/",
-    "phpunit": "phpunit --bootstrap vendor/autoload.php --testdox tests/",
-    "test": [
-        "@phpcs",
-        "@phpstan",
-        "@phpunit"
-    ]
+        "phpcs": "phpcs --standard=PSR2 src/ tests/ --ignore=tests/coverage/*",
+        "phpmd": "phpmd src/,tests/ ansi design,naming,unusedcode",
+        "phpfix": "phpcbf --standard=PSR2 --extensions=php src/ tests/",
+        "phpstan": "phpstan analyse -l 8 src/ tests/",
+        "phpunit": "phpunit --bootstrap vendor/autoload.php --testdox tests/",
+        "test": [
+            "@phpcs",
+            "@phpmd",
+            "@phpstan",
+            "@phpunit"
+        ]
     },
     "config": {
         "sort-packages": true,
