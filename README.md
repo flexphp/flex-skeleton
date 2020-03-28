@@ -25,6 +25,7 @@ git clone --depth=1 git@github.com:flexphp/skeleton.git library
 - Unignore _composer.lock_ file in `.gitignore` file
 - Remove `.gitignore` files in _src_ and _test_ folders
 - Update `README.md` file
+- Update `composer.json` file (if is necessary)
 
 ## License
 
